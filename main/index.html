@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
     <title>Text into Voice</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div
+      class="w-full h-[100vh] bg-[linear-gradient(45deg,#010758,#490d61)] flex flex-col items-center justify-center"
+    >
+      <h1 class="text-[#fff] text-5xl font-medium -mt-[50px] mb-[50px]">
+        Text to Speach <span class="text-[#ff2963]">Converter</span>
+      </h1>
+      <textarea
+        class="w-[600px] h-[250px] bg-[#403d84] text-white text-[15px] border-0 outline-0 p-5 rounded-[10px] resize-none mb-8 placeholder:text-[16px] placeholder:text-[#ddd]"
+        name=""
+        placeholder="Write anything here..."
+        id=""
+      ></textarea>
+      <div class="w-[600px] flex items-center gap-5">
+        <select
+          class="flex-1 text-white bg-[#403d84] h-[50px] py-0 px-5 outline-0 border-0 rounded-[35px] appearance-none bg-[url('/images/dropdown.png')] bg-no-repeat bg-[right_20px_center]"
+          name=""
+          id=""
+        ></select>
+        <button
+          class="bg-[#ff2963] text-white text-[16px] py-2.5 px-8 rounded-[35px] border-0 outline-0 cursor-pointer flex items-center"
+        >
+          <img src="/images/play.png" width="16px" class="mr-2.5" alt="" />
+          Listen
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
